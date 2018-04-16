@@ -1,5 +1,5 @@
 // modules for routes
-const express = require('express');
+var express = require('express');
 
 // routes configurations
 const routesConfig = (app) => {
