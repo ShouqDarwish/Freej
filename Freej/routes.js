@@ -1,5 +1,6 @@
 
 const express = require('express');
+//const path = require('path');
 
 const itemAPI = require('./entities/item/api');
 
@@ -8,8 +9,8 @@ const itemAPI = require('./entities/item/api');
  */
 const routesConfig = (app) => {
   // serves static files from public directory
-  const publicPath = path.resolve(__dirname, '../public');
-  app.use(express.static(publicPath));
+  // const publicPath = path.resolve(__dirname, '../public');
+  // app.use(express.static(publicPath));
 
   // serve api endpoint
   app.get('/api', (req, res) => {
@@ -17,7 +18,7 @@ const routesConfig = (app) => {
   });
 
   // apply user apis
-  itemAPI(app);
+  //itemAPI(app);
 
 };
 

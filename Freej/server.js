@@ -1,12 +1,17 @@
 // modules for server
 var express = require('express');
-var mongojs = require('mongojs');
+var mongoose = require('mongoose');
 var http = require('http');
 var bodyParser = require('body-parser');
 
 // server configurations
 const hostname = 'localhost';
 const port = 3000;
+
+//DB connection
+var databaseConfig = require('./database.js');
+mongoose.connect(databaseConfig.DBurl);
+
 
 // initialize express
 var app = express();
