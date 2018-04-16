@@ -1,11 +1,8 @@
-
+const path = require('path');
 const express = require('express');
 
 const itemAPI = require('./entities/item/api');
 
-/**
- * routes configurations
- */
 const routesConfig = (app) => {
   // serves static files from public directory
   const publicPath = path.resolve(__dirname, '../public');
