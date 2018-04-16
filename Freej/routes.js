@@ -1,12 +1,23 @@
-// modules for routes
-var express = require('express');
 
-// routes configurations
+const express = require('express');
+
+const itemAPI = require('./entities/item/api');
+
+/**
+ * routes configurations
+ */
 const routesConfig = (app) => {
+  // serves static files from public directory
+  const publicPath = path.resolve(__dirname, '../public');
+  app.use(express.static(publicPath));
 
-app.get('/api', (req, res) => {
-    res.send('Hello from API ');
+  // serve api endpoint
+  app.get('/api', (req, res) => {
+    res.send('Hello from API endpoint');
   });
+
+  // apply user apis
+  itemAPI(app);
 
 };
 
