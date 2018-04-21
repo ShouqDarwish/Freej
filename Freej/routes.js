@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
 //const path = require('path');
+const bodyparser = require('body-parser');
+
 
 const authAPI = require('./entities/auth/api');
 // const userAPI = require('./entities/user/api');

@@ -10,7 +10,16 @@ const itemSchema = mongoose.Schema({
   tags: [String]
 });
 
+
 module.exports = mongoose.model('item', itemSchema);
+
+
+// var Item = mongoose.model('item', itemSchema);
+// var i = new Item({title: "Recycling initiative",
+// description:"Water bottles"});
+// i.save(function(err) {
+//     if(err) console.log('Error on save' + err);
+// });
 
 
 // var mongoDB = 'mongodb://shouq:Capstone1@ds237489.mlab.com:37489/freej';
