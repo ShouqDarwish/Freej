@@ -1,13 +1,14 @@
-
+const path = require('path');
 const express = require('express');
 //const path = require('path');
 
-const itemAPI = require('./entities/item/api');
+const authAPI = require('./entities/auth/api');
+// const userAPI = require('./entities/user/api');
+// const itemAPI = require('./entities/item/api');
+// const commentAPI = require('./entities/comment/api');
 
-/**
- * routes configurations
- */
-const routesConfig = (app) => {
+
+const routesConfig = (app,passport) => {
   // serves static files from public directory
   // const publicPath = path.resolve(__dirname, '../public');
   // app.use(express.static(publicPath));
@@ -18,7 +19,12 @@ const routesConfig = (app) => {
   });
 
   // apply user apis
-  //itemAPI(app);
+
+  authAPI(app,passport);
+  // userAPI(app);
+
+  // itemAPI(app);
+  // commentAPI(app);
 
 };
 

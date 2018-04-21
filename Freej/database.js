@@ -1,3 +1,4 @@
 module.exports = {
-    'DBurl' : 'your-settings-here' // looks like mongodb://<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot
+    'DBurl' : 'mongodb://nasser:Capstone1@ds237489.mlab.com:37489/freej',
+    'DBurl2': 'mongodb://shouq:Capstone1@ds237489.mlab.com:37489/freej'
 };

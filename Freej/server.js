@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 // server configurations
 const hostname = 'localhost';
-const port = 3000;
+const port = 8080;
 
 //DB connection
 var databaseConfig = require('./database.js');
