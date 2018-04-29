@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Freej</title>
+
+    <!-- Styles -->
+    <link href="assets/css/page.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="TheSaaS">
+    <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+    <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+    <meta property="og:url" content="http://thetheme.io/thesaas/">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+
+  <body>
+        <!-- Modal - Login -->
+          <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign into your account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <!-- Main Content -->
+                    <main class="main-content">
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="username" placeholder="Username">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                          </div>
+
+                          <div class="form-group flexbox py-3">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" checked>
+                              <label class="custom-control-label">Remember me</label>
+                            </div>
+
+                            <a class="text-muted small-2" href="user-recover.html">Forgot password?</a>
+                          </div>
+
+                          <div class="form-group">
+                            <button class="btn btn-block btn-primary" type="submit">Login</button>
+                          </div>
+                        </form>
+
+                        <div class="divider">Or Login With</div>
+                        <div class="text-center">
+                          <a class="btn btn-circle btn-sm btn-facebook mr-2" href="#"><i class="fa fa-facebook"></i></a>
+                          <a class="btn btn-circle btn-sm btn-google mr-2" href="#"><i class="fa fa-google"></i></a>
+                          <a class="btn btn-circle btn-sm btn-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+
+                        <hr class="w-30">
+
+                        <p class="text-center text-muted small-2">Don't have an account? <a id="signup-btn" href="#" >Register here</a></p>
+
+                    </main><!-- /.main-content -->
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      <!-- Modal - Signup -->
+          <div class="modal fade" id="modal-signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create an account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                <!-- Main Content -->
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Email Address">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                          </div>
+
+                          <div class="form-group">
+                            <input type="password" class="form-control" name="password-confirm" placeholder="Password (confirm)">
+                          </div>
+
+                          <div class="form-group py-3">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <label class="custom-control-label">I agree to the <a class="ml-1" href="terms.html">terms of service</a></label>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <button class="btn btn-block btn-primary" type="submit">Register</button>
+                          </div>
+                        </form>
+
+                        <div class="divider">Or Register With</div>
+                        <div class="text-center">
+                          <a class="btn btn-circle btn-sm btn-facebook mr-2" href="#"><i class="fa fa-facebook"></i></a>
+                          <a class="btn btn-circle btn-sm btn-google mr-2" href="#"><i class="fa fa-google"></i></a>
+                          <a class="btn btn-circle btn-sm btn-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+
+                        <hr class="w-30">
+
+                        <p class="text-center text-muted small-2">Already a member? <a id="login-btn-in" href="#" >Login here</a></p>
+                    </div>
+
+                    </main><!-- /.main-content -->
+                </div>
+              </div>
+            </div>
+    
+          <!-- Modal - Post -->
+          <div class="modal fade" id="modal-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="create-post">Create a Post</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-xl-4 aos-init aos-animate py-6" data-aos="fade-in" data-aos-delay="300">
+                            <a class="card card-body border hover-shadow-6 text-center py-6" id="help-btn" href="#" >
+                            <p><i class="fa fa-handshake lead-6 text-muted"></i></p>
+                            <h6 class="mb-0">Help</h6>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-xl-4 aos-init aos-animate py-6" data-aos="fade-in" data-aos-delay="300">
+                            <a class="card card-body border hover-shadow-6 text-center py-6" id="help-btn" href="#" >
+                            <p><i class="fa fa-users lead-6 text-muted"></i></p>
+                            <h6 class="mb-0">Organise a Meetup</h6>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-xl-4 aos-init aos-animate py-6" data-aos="fade-in" data-aos-delay="300">
+                            <a class="card card-body border hover-shadow-6 text-center py-6" id="help-btn" href="#" >
+                            <p><i class="fa fa-apple lead-6 text-muted"></i></p>
+                            <h6 class="mb-0">Initiative</h6>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </section>
+
+        <a class="btn btn-sm btn-round btn-light" id="login-btn">Login</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+      
+      <!-- Header -->
+      <header class="header text-white h-fullscreen pb-8" style="background-image: linear-gradient(to top, #af66a1 0%, #9e2482 100%);">
+        <canvas class="constellation" data-radius="0" width="1440" height="562"></canvas>
+        <div class="container text-center">
+
+          <div class="row h-100">
+            <div class="col-md-7 col-xl-5 mx-auto align-self-center">
+              <img class="logo-light" src="assets/img/Asset 1@4x.png" alt="logo">
+              <p class="lead-3 mx-auto mt-6 mb-7">Is an elegant, modern and fully customizable SaaS and WebApp template.</p>
+              <hr class="w-80px mb-7">
+              <a  id="post-btn" class="btn btn-xl btn-round btn-light px-7">Create a post</a>
+            </div>
+
+            <div class="col-12 align-self-end text-center">
+              <a class="scroll-down-1 scroll-down-white" href="#section-search" data-scrollto="section-search"><span></span></a>
+            </div>
+          </div>
+
+        </div>
+      </header>
+      <!-- END Header -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Populate the page
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section" id="section-search">
+        <div class="container">
+          <header class="section-header">
+            <small>Content</small>
+            <h2>How To Get Started</h2>
+            <hr>
+          </header>
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p><strong>1. <a href="readme.html">Read me</a></strong> file is the staring point. It includes some guides and FAQs which answers most of your questions. So you should start reading now if you haven't.</p>
+
+              <p><strong>2. <a href="http://thetheme.io/thesaas/uikit/navbar.html" target="_blank">Navbar</a></strong> is a must have components for most of websites. Lean about navbars to create your own or use any of the available samples by visiting navbar documentation.</p>
+
+              <p><strong>3. <a href="http://thetheme.io/thesaas/block/header.html" target="_blank">Header</a> or <a href="http://thetheme.io/thesaas/block/cover.html" target="_blank">Cover</a></strong> is the next step. Create or use one of the available headers for your internal pages or get inspired by our sample covers for your homepage.</p>
+
+              <p><strong>4. <a href="http://thetheme.io/thesaas/block/footer.html" target="_blank">Footer</a></strong> is a mandatory part of most websites. Get a sample footer, make it yours, and use it in all of the pages. Feel free to change the background color of footers using utility classes.</p>
+
+              <p><strong>5. <a href="http://thetheme.io/thesaas/block/" target="_blank">Blocks</a></strong> are the content here. We have hundreds of blocks, categorized in more than 20 pages. Simply pick what you need and change the text and image of the block and you're good to go.</p>
+
+              <p><strong>6. <a href="http://thetheme.io/thesaas/uikit/" target="_blank">UI Kit</a></strong> is the final destination for your creativity. If you need to create a custom block or get enough knowledge for modifying the existing blocks, this is the place.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+    </main>
+
+
+      <!-- Footer -->
+      <footer class="footer py-7">
+        <div class="container">
+          <div class="row gap-y">
+
+            <div class="col-md-6 col-xl-4">
+              <p><a href="#"><img src="../assets/img/logo-dark.png" alt="logo"></a></p>
+              <p>We can combine beautiful, modern designs with clean, functional and high-performance code to produce stunning websites.</p>
+            </div>
+
+            <div class="col-6 col-md-3 col-xl-2">
+              <h6 class="mb-4 mt-1"><strong>Company</strong></h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Careers</a>
+                <a class="nav-link" href="#">Contact</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-xl-2">
+              <h6 class="mb-4 mt-1"><strong>Product</strong></h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Security</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-xl-2">
+              <h6 class="mb-4 mt-1"><strong>Support</strong></h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">Help Center</a>
+                <a class="nav-link" href="#">API</a>
+                <a class="nav-link" href="#">FAQ</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-xl-2 text-center">
+              <p><a class="btn btn-block btn-round btn-primary" href="#">Try it free</a></p>
+              <br>
+              <div class="social social-bordered">
+                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="social-youtube" href="#"><i class="fa fa-youtube"></i></a>
+                <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="assets/js/page.min.js"></script>
+
+  </body>
+</html>
