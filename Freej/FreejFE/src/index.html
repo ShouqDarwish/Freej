@@ -94,6 +94,7 @@
 
                 <div class="modal-body">
                 <!-- Main Content -->
+                    <main class="main-content">
                         <form>
                           <div class="form-group">
                             <input type="text" class="form-control" name="name" placeholder="Your Name">
@@ -133,9 +134,9 @@
                         <hr class="w-30">
 
                         <p class="text-center text-muted small-2">Already a member? <a id="login-btn-in" href="#" >Login here</a></p>
-                    </div>
 
                     </main><!-- /.main-content -->
+                    </div>
                 </div>
               </div>
             </div>
@@ -241,32 +242,54 @@
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
       <section class="section" id="section-search">
-        <div class="container">
-          <header class="section-header">
-            <small>Content</small>
-            <h2>How To Get Started</h2>
-            <hr>
-          </header>
+          <div class="container">
+              <div data-provide="shuffle">
+
+                <div class="row mb-7">
+                  <div class="col- 8col-md-8 col-xl-8 mx-auto input-round">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="ti-search"></i></div>
+                      </div>
+                      <input class="form-control" type="text" data-shuffle="search" placeholder="Search">
+                    <button class="btn btn-round btn-secondary" type="button">Search</button>
+                    </div>
+                  </div>
+                </div>
 
 
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <p><strong>1. <a href="readme.html">Read me</a></strong> file is the staring point. It includes some guides and FAQs which answers most of your questions. So you should start reading now if you haven't.</p>
+                  <div data-provide="shuffle">
+                    <ul class="nav nav-center nav-bold nav-uppercase nav-pills mb-7" data-shuffle="filter">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#" data-shuffle="button">All</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-shuffle="button" data-group="bag">Help</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-shuffle="button" data-group="box">Iniative</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-shuffle="button" data-group="book">Meetup</a>
+                    </ul>
 
-              <p><strong>2. <a href="http://thetheme.io/thesaas/uikit/navbar.html" target="_blank">Navbar</a></strong> is a must have components for most of websites. Lean about navbars to create your own or use any of the available samples by visiting navbar documentation.</p>
 
-              <p><strong>3. <a href="http://thetheme.io/thesaas/block/header.html" target="_blank">Header</a> or <a href="http://thetheme.io/thesaas/block/cover.html" target="_blank">Cover</a></strong> is the next step. Create or use one of the available headers for your internal pages or get inspired by our sample covers for your homepage.</p>
+                  <div class="row gap-y gap-2" data-shuffle="list">
 
-              <p><strong>4. <a href="http://thetheme.io/thesaas/block/footer.html" target="_blank">Footer</a></strong> is a mandatory part of most websites. Get a sample footer, make it yours, and use it in all of the pages. Feel free to change the background color of footers using utility classes.</p>
+                  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bag,box">
+                    <a class="card shadow-1 hover-shadow-6" href="portfolio-single.html">
+<!--                      <img class="card-img-top" src="../assets/img/portfolio/1.jpg" alt="screenshot">-->
+                      <div class="card-body">
+                        <h6 class="fw-500 mb-0">Phone Bag</h6>
+                        <small class="small-5 text-lightest text-uppercase ls-2">Bag, Box</small>
+                      </div>
+                    </a>
+                  </div>
 
-              <p><strong>5. <a href="http://thetheme.io/thesaas/block/" target="_blank">Blocks</a></strong> are the content here. We have hundreds of blocks, categorized in more than 20 pages. Simply pick what you need and change the text and image of the block and you're good to go.</p>
-
-              <p><strong>6. <a href="http://thetheme.io/thesaas/uikit/" target="_blank">UI Kit</a></strong> is the final destination for your creativity. If you need to create a custom block or get enough knowledge for modifying the existing blocks, this is the place.</p>
-            </div>
+                </div>
+                </div>
+              </div>
           </div>
-
-
-        </div>
       </section>
 
 
