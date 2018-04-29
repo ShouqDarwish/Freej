@@ -241,57 +241,66 @@
       | Populate the page
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="section" id="section-search">
-          <div class="container">
-              <div data-provide="shuffle">
-
-                <div class="row mb-7">
-                  <div class="col- 8col-md-8 col-xl-8 mx-auto input-round">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="ti-search"></i></div>
-                      </div>
-                      <input class="form-control" type="text" data-shuffle="search" placeholder="Search">
-                    <button class="btn btn-round btn-secondary" type="button">Search</button>
-                    </div>
-                  </div>
-                </div>
+      <section class="section overflow-hidden">
+        <div class="container">
+          <header class="section-header">
+            <h2>Posts</h2>
+            <hr>
+            <p>Setup your shuffle component as easy as setting few data attributes.</p>
+          </header>
 
 
-                  <div data-provide="shuffle">
-                    <ul class="nav nav-center nav-bold nav-uppercase nav-pills mb-7" data-shuffle="filter">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#" data-shuffle="button">All</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" data-shuffle="button" data-group="bag">Help</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" data-shuffle="button" data-group="box">Iniative</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" data-shuffle="button" data-group="book">Meetup</a>
-                    </ul>
+          <div data-provide="shuffle">
+
+            <nav class="nav nav-center nav-pills mb-7" data-shuffle="filter">
+              <a class="nav-link active" href="#" data-shuffle="button">All</a>
+              <a class="nav-link" href="#" data-shuffle="button" data-group="bag">Bag</a>
+              <a class="nav-link" href="#" data-shuffle="button" data-group="box">Box</a>
+              <a class="nav-link" href="#" data-shuffle="button" data-group="book">Book</a>
+              <a class="nav-link" href="#" data-shuffle="button" data-group="bottle">Bottle</a>
+            </nav>
 
 
-                  <div class="row gap-y gap-2" data-shuffle="list">
+            <div class="row gap-y gap-2" data-shuffle="list">
 
-                  <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bag,box">
-                    <a class="card shadow-1 hover-shadow-6" href="portfolio-single.html">
-<!--                      <img class="card-img-top" src="../assets/img/portfolio/1.jpg" alt="screenshot">-->
-                      <div class="card-body">
-                        <h6 class="fw-500 mb-0">Phone Bag</h6>
-                        <small class="small-5 text-lightest text-uppercase ls-2">Bag, Box</small>
-                      </div>
-                    </a>
-                  </div>
-
-                </div>
-                </div>
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bag,box">
+                <img src="../assets/img/portfolio/1.jpg" alt="screenshot">
               </div>
-          </div>
-      </section>
 
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="book">
+                <img src="../assets/img/portfolio/2.jpg" alt="screenshot">
+              </div>
+
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="box">
+                <img src="../assets/img/portfolio/3.jpg" alt="screenshot">
+              </div>
+
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bottle">
+                <img src="../assets/img/portfolio/4.jpg" alt="screenshot">
+              </div>
+
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bottle">
+                <img src="../assets/img/portfolio/5.jpg" alt="screenshot">
+              </div>
+
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bag">
+                <img src="../assets/img/portfolio/6.jpg" alt="screenshot">
+              </div>
+
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="bottle">
+                <img src="../assets/img/portfolio/7.jpg" alt="screenshot">
+              </div>
+
+              <div class="col-6 col-lg-3" data-shuffle="item" data-groups="book">
+                <img src="../assets/img/portfolio/8.jpg" alt="screenshot">
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
 
 
     </main>

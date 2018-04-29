@@ -32,5 +32,5 @@ $(document).ready(function() {
         $("#modal-post").modal('show');
     });
 
-
 });
+
